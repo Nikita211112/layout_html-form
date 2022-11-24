@@ -2,16 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1>HTML Form</h1>
+
+    <form
+      class="form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      >
+      <fieldset class="personal-info">
+        <legend class="personal-info__title">
+          Personal information
+        </legend>
+        <label class="personal-info__label">
+          Surname:
+          <input
+            class="personal-info__input"
+            type="text"
+            name="surname"
+          >
+        </label>
+        <label class="personal-info__label">
+          Name:
+          <input
+            class="personal-info__input"
+            type="text"
+            name="name"
+          >
+        </label>
+        <label class="personal-info__label">
+          How old are You?
+          <input
+            class="personal-info__input"
+            type="number"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
+          >
+        </label>
+        <label class="personal-info__label">
+          Full date of birth:
+          <input
+            class="personal-info__input"
+            type="date"
+            name="birthday"
+            >
+        </label>
+        <label class="personal-info__label">
+          I accept the term of the agreement
+          <input
+            class="personal-info__input"
+            type="checkbox"
+            name="accept"
+            >
+        </label>
+      </fieldset>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

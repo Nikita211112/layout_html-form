@@ -1,1 +1,14 @@
 /* styles go here */
+
+body {
+  box-sizing: border-box;
+}
+
+.personal-info__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.personal-info__label:last-child {
+  margin-bottom: 0;
+}
