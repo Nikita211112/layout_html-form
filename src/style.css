@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+.personal-info {
+  margin-bottom: 20px;
+}
+
 .personal-info__label {
   display: block;
   margin-bottom: 10px;
@@ -11,4 +15,8 @@ body {
 
 .personal-info__label:last-child {
   margin-bottom: 0;
+}
+
+.personal-info__radio {
+  display: inline-block;
 }
